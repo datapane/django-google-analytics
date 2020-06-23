@@ -24,8 +24,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         'Django>=2.2.5,<3.1',
-        'django-celery',
-        'celery<4.0',
         'requests',
         'beautifulsoup4',
         'six',
