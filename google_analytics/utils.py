@@ -112,6 +112,8 @@ def build_ga_params(
     # add user ID if exists
     if user_id:
         params.update({'uid': user_id})
+    elif request.user.is_authenticated:
+        params.update({'uid': request.user.id})
 
     # add custom parameters
     params.update(custom_params)
